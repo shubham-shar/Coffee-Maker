@@ -28,7 +28,7 @@ public class BeverageController {
     public Set<String> getOrderStatus(MachineConfiguration machineConfiguration){
         Objects.requireNonNull(machineConfiguration.getMachine().getQuantities());
         
-        if(machineConfiguration.getMachine().getQuantities().isEmpty()) {
+        if(machineConfiguration.getMachine().getBeverages().isEmpty()) {
             throw new InvalidRequestException("No Order Placed, Kindly place some order first");
         }
         return beverageService.checkOrderAvailability(machineConfiguration);

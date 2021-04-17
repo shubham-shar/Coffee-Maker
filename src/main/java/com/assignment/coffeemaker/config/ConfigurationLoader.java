@@ -18,19 +18,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  *         16/04/21
  */
 public class ConfigurationLoader {
-    private static ConfigurationLoader configurationLoader = null;
     
     private final Path path;
     
-    private ConfigurationLoader(Path path){
+    public ConfigurationLoader(Path path){
         this.path = path;
-    }
-    
-    public static ConfigurationLoader getInstance(Path path) {
-        if(Objects.isNull(configurationLoader)) {
-            configurationLoader = new ConfigurationLoader(path);
-        }
-        return configurationLoader;
     }
     
     /**
