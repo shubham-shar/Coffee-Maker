@@ -38,6 +38,7 @@ Clone the github Repo and import in intellij (or your choice of IDE) \
     ```
   
 ## Improvements
+- Validation on input given (negative numbers, wrong input type)
 - Logic to make beverage can be improved (as of now, the beverages are made in the order they are sent)
 - More testing needs to be done.
 
